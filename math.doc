@@ -1,0 +1,10 @@
+sqrt(p) = sqrt(y/x);
+
+价格与刻度的公式：sqrt(p(i)) = 1.0001^(i/2)
+                i = log(sqrt(1.001) ) sqrt(p(i))
+
+Uniswap使用Q64.96数字来存储 sqrt(p) , 也就是将浮点小数乘以2^96        
+
+添加流行性时
+x = (L(sqrt(pb) - sqrt(pc))) / (sqrt(pb) * sqrt(pc))
+y = L * (sqrt(pc) - sqrt(pb))
